@@ -16,3 +16,9 @@ def view5(request):
     name=request.GET.get("name","aaa")
     age=request.GET.get("age",22)
     info={"name":name}
+
+def temp1(request):
+    return render (request,"./simple.html")
+def temp2(request):
+    return render (request,"./second.html")
+

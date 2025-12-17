@@ -17,11 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app1.views import view1,view2,view3,dynamicview4
+from app1.views import view1,view2,view3,dynamicview4,temp1,temp2
 urlpatterns = [
     path('admin/',admin.site.urls),
     path('view1/',view1),
     path('view2/',view2),
     path('view3/',view3),
-    path('dynamicview4/',dynamicview4)
+    path('dynamicview4/',dynamicview4),
+    path('set/',temp1),
+    path('set/',temp1),
+    path('second/',temp2)
+
+
 ]
